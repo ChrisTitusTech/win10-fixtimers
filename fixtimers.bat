@@ -22,6 +22,7 @@ if '%errorlevel%' NEQ '0' (
 
 :gotAdmin
     bcdedit /deletevalue useplatformclock
+    bcdedit /set useplatformclock false
     bcdedit /set useplatformtick yes
     bcdedit /set disabledynamictick yes
 :--------------------------------------
